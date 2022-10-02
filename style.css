@@ -1,0 +1,162 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+  background-color: #531554;
+}
+.header svg {
+  width: 70px;
+}
+.header .c-slacklogo--color path:nth-child(2) {
+  filter: invert(100%);
+}
+.header .burger-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  display: none;
+}
+.header .menus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+  width: 85%;
+}
+.header .menus .menu-left {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+}
+.header .menus .menu-left__links ul li {
+  display: inline;
+  margin: 5px;
+}
+.header .menus .menu-left__links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.header .menus .menu-left__links ul li a:hover {
+  text-decoration: underline;
+}
+.header .menus .menu-right {
+  display: flex;
+  gap: 10px;
+}
+.header .menus .menu-right a {
+  text-decoration: none;
+  margin: 10px;
+  color: white;
+  font-weight: 700;
+}
+.header .menus .menu-right a:first-child {
+  font-size: 10px;
+  padding-top: 15px;
+}
+.header .menus .menu-right a:first-child:hover {
+  text-decoration: underline;
+}
+.header .menus .menu-right .menu-right__button1 {
+  border: 1px solid white;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.header .menus .menu-right .menu-right__button1:hover {
+  box-shadow: inset 0 0 0 1px #fff;
+  transition: 200ms;
+}
+.header .menus .menu-right .menu-right__button2 {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: white;
+  color: #531554;
+}
+.header .menus .menu-right .menu-right__button2:hover {
+  box-shadow: inset 0 0 0 2px #611f69;
+  transition: 400ms;
+}
+
+.main {
+  background-color: #531554;
+  padding: 20px;
+}
+.main .start {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.main .start__left {
+  padding: 20px;
+  text-align: left;
+}
+.main .start__left--title {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.main .start__left--title span {
+  color: #efb229;
+}
+.main .start__left--info {
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+}
+.main .start__left--lastinfo {
+  color: white;
+  font-size: 10px;
+  width: 300px;
+}
+.main .start__buttons {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  display: grid;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 20px;
+  width: 400px;
+  font-weight: 700;
+}
+.main .start__buttons--email {
+  padding: 12px;
+  background-color: white;
+  color: #611f69;
+}
+.main .start__buttons--email:hover {
+  box-shadow: inset 0 0 0 1px #611f69;
+  transition: 200ms;
+}
+.main .start__buttons .google {
+  display: flex;
+  background-color: #4286f5;
+}
+.main .start__buttons .google .logo {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 2px;
+  margin: 2px;
+  padding: 10px;
+}
+.main .start__buttons .google a {
+  padding-left: 70px;
+  align-self: center;
+  color: white;
+}
+.main .start__right .video {
+  max-height: 350px;
+  max-width: 500px;
+}/*# sourceMappingURL=style.css.map */
