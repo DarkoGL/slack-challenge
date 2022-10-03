@@ -408,23 +408,95 @@
 .last-section h3 {
   text-align: center;
   padding-top: 50px;
-  font-size: 32px;
+  padding-bottom: 35px;
+  font-size: 30px;
   font-weight: 700;
-  padding-bottom: 30px;
 }
 .last-section .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  align-content: center;
+  width: 70%;
+  margin: 0 auto;
 }
 .last-section .cards__content {
-  border: 1px solid black;
+  padding: 15px;
+  background-color: white;
+  height: 400px;
+  width: 300px;
+  text-align: center;
 }
 .last-section .cards__content img {
   width: 100%;
-  height: 100%;
+  height: 50%;
+  text-align: center;
+}
+.last-section .cards__content--title {
+  padding-top: 20px;
+  font-size: 14px;
+  text-align: left;
 }
 .last-section .cards__content--desc {
-  font-size: 12px;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: left;
+}
+.last-section .cards__content--link {
+  display: inline;
+  float: left;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.last-section .cards__content--link .arrow {
+  margin-left: 45px;
+  font-size: 28px;
+}
+
+.ellipse {
+  background-color: #4a154b;
+  -webkit-clip-path: ellipse(75% 100% at center top);
+          clip-path: ellipse(75% 100% at center top);
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipse__content {
+  text-align: center;
+}
+.ellipse__content h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 50px;
+}
+.ellipse__content a {
+  font-weight: 700;
+  margin: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.ellipse__content a:first-child {
+  background-color: white;
+  padding: 15px 30px;
+  color: #4a154b;
+  border-radius: 5px;
+}
+.ellipse__content a:first-child:hover {
+  box-shadow: inset 0 0 0 2px #611f69;
+  transition: 400ms;
+}
+.ellipse__content a:nth-child(2) {
+  border: 1px solid white;
+  padding: 14px 40px;
+  border-radius: 5px;
+  color: white;
+}
+.ellipse__content a:nth-child(2):hover {
+  box-shadow: inset 0 0 0 1px #fff;
+  transition: 500ms;
 }/*# sourceMappingURL=style.css.map */
