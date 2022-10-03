@@ -484,7 +484,6 @@
     padding-bottom: 35px;
     font-size: 30px;
     font-weight: 700;
-    
   }
 
   .cards {
@@ -496,7 +495,7 @@
     &__content {
       padding: 15px;
       background-color: white;
-      height: 400px;
+      height: 450px;
       width: 300px;
       text-align: center;
 
@@ -506,37 +505,37 @@
         text-align: center;
       }
 
-      &--title{
+      &--title {
         padding-top: 20px;
         font-size: 14px;
         text-align: left;
       }
 
-      &--desc{
-        padding: 20px 0;
+      &--desc {
         font-weight: 700;
         font-size: 24px;
         text-align: left;
+        padding-top: 20px;
+        padding-bottom: 60px;
       }
 
-      &--link{ 
+      &--link {
         display: inline;
         float: left;
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 700;
 
-        .arrow{
+        .arrow {
           margin-left: 45px;
           font-size: 28px;
         }
       }
-
     }
   }
 }
 
-.ellipse{
+.ellipse {
   background-color: #4a154b;
   clip-path: ellipse(75% 100% at center top);
   height: 400px;
@@ -546,44 +545,142 @@
   align-items: center;
 }
 
-.ellipse__content{
+.ellipse__content {
   text-align: center;
-  h4{
+  h4 {
     font-size: 36px;
     font-weight: 700;
     color: white;
     margin-bottom: 50px;
   }
 
-  a{
+  a {
     font-weight: 700;
     margin: 5px;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    &:first-child{
+    &:first-child {
       background-color: white;
       padding: 15px 30px;
       color: #4a154b;
       border-radius: 5px;
 
-      &:hover{
+      &:hover {
         box-shadow: inset 0 0 0 2px #611f69;
         transition: 400ms;
       }
     }
 
-    &:nth-child(2){
+    &:nth-child(2) {
       border: 1px solid white;
       padding: 14px 40px;
       border-radius: 5px;
       color: white;
 
-      &:hover{
+      &:hover {
         box-shadow: inset 0 0 0 1px #fff;
         transition: 500ms;
       }
     }
+  }
+}
+
+.footer {
+  height: 500px;
+
+  svg {
+    margin: 40px;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: center;
+
+    &--ul {
+      padding: 40px;
+
+      li {
+        padding: 10px;
+
+        &:first-child {
+          font-weight: 700;
+        }
+      }
+      li a {
+        color: black;
+        font-size: 14px;
+
+        &:hover {
+          color: #1264a3;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-top: 2px solid #e9e9e9;
+    width: 70%;
+    margin: 0 auto;
+
+    svg {
+      margin: 0;
+      padding: 0;
+    }
+    &--left,
+    &--right {
+      padding: 20px;
+    }
+
+    &--left {
+      li {
+        padding: 20px;
+        display: inline;
+
+        a {
+          color: black;
+          font-weight: 700;
+          font-size: 14px;
+
+          &:hover {
+            color: #1264a3;
+          }
+        }
+      }
+    }
+
+    &--right {
+      svg {
+        margin-right: 10px;
+
+        &:hover {
+          fill: #1264a3;
+        }
+      }
+      li {
+        display: inline;
+        padding: 10px;
+
+        a {
+          color: black;
+          font-weight: 700;
+          font-size: 14px;
+
+          &:hover {
+            color: #1264a3;
+          }
+        }
+      }
+    }
+  }
+
+  .last-p{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 10px;
   }
 }
